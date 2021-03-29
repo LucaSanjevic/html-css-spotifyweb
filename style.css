@@ -14,7 +14,7 @@
     }
 aside {
     width: 14vw;
-    height: calc(100vh - 50px);
+    height: calc(78vh + 78px);
     background-color: black;
     position: fixed;
    left: 0px;
@@ -40,6 +40,13 @@ aside {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.barcontainer:hover .pallino  {
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    float: left;
+    background-color: rgb(116, 115, 115);
+}
 
 .wrap {
     flex-wrap: wrap;
@@ -53,8 +60,8 @@ main > section > .basis > .basis1 {
 }
 
 .basis > div > img {
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: auto;
 }
 .basis > .hoverimg img:hover {
     opacity: 0.4;
@@ -68,9 +75,29 @@ main > section > .basis > .basis1 {
     color: #fff;
     visibility: hidden;
 }
-.hoverimg {
-    position: relative;
+
+@media all and (min-width:1px) and (max-width:998px) {
+    .hoverimg {
+        position: relative;
+        width: calc(100%/2);
+    }
 }
+
+@media all and (min-width:998px) and (max-width:1200px) {
+    .hoverimg {
+        position: relative;
+        width: calc(100%/4);
+    }
+}
+
+@media all and (min-width:1200px) and (max-width:1800px) {
+    .hoverimg {
+        position: relative;
+        width: calc(100%/6);
+    }
+}
+
+
 .hoverimg:hover .img-description {
     visibility: visible;
   }
@@ -209,12 +236,16 @@ height: 90px;
     color: gray;
 }
 
+.grow {
+    flex-grow: 1;
+}
+
 li {
     list-style-type: none;
 }
 main {
     border: 1px solid black;
-    height: 75vh;
+    height: 78vh;
     width: 87vw;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -261,9 +292,9 @@ margin-left: 40px;
     margin: auto;
 }
 .overflow {
-    overflow-y: scroll;
+    overflow: auto;
      position: relative;
-     height: 300px;
+     flex-grow: 1;
 }
 
 .padding-left {
@@ -274,10 +305,15 @@ margin-left: 40px;
     padding-right: 5px;
 }
 
+.margin-left3 {
+    margin-left: -10px;
+}
 .margin-bottom--35 {
     margin-bottom: -35px;
 }
-
+.margin-top-3 {
+    margin-top: -3px;
+}
 .piu {
     font-size: 45px;
     position: absolute;
@@ -295,7 +331,10 @@ margin-left: 40px;
 .right {
     float: right;
 }
-
+.row1 {
+    margin: none;
+    flex-direction: row;
+}
 .space-between {
     justify-content: space-between;
 }
@@ -306,6 +345,11 @@ margin-left: 40px;
 
 .verticalign {
     vertical-align: middle;
+}
+@media all and (max-width:767px) {
+.visibility-xs {
+    visibility: hidden;
+}
 }
 
 .white {
@@ -337,9 +381,6 @@ width: 200px;
 
 .white-space {
     white-space: nowrap;
-}
-.wrap {
-    flex-wrap: nowrap;
 }
 
 li  > img {
