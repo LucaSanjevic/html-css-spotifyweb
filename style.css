@@ -47,7 +47,9 @@ aside {
     float: left;
     background-color: rgb(116, 115, 115);
 }
-
+.barcontainer:hover .bar {
+    background-color: rgb(9, 58, 9);
+}
 .wrap {
     flex-wrap: wrap;
 }
@@ -60,7 +62,7 @@ main > section > .basis > .basis1 {
 }
 
 .basis > div > img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 .basis > .hoverimg img:hover {
@@ -83,10 +85,26 @@ main > section > .basis > .basis1 {
     }
 }
 
+@media all and (min-width:1px) and (max-width:768px) {
+    .hoverimg2 {
+        width: calc(100%/4);
+
+    }
+}
+
+@media all and (min-width:768px) and (max-width:998px) {
+    .hoverimg2 {
+        width: calc(100%/3);
+    }
+}
+
 @media all and (min-width:998px) and (max-width:1200px) {
     .hoverimg {
         position: relative;
         width: calc(100%/4);
+    }
+    .hoverimg2 {
+        width: calc(100%/5);
     }
 }
 
@@ -272,6 +290,10 @@ margin-left: 10px;
 margin-left: 40px;
 }
 
+.margin-right-10 {
+    margin-right: 10px;
+}
+
 .margin-top-10 {
     margin-top: 10px;
 }
@@ -343,9 +365,7 @@ margin-left: 40px;
     text-align: center;
 }
 
-.verticalign {
-    vertical-align: middle;
-}
+
 @media all and (max-width:767px) {
 .visibility-xs {
     visibility: hidden;
@@ -393,9 +413,6 @@ ul {
     margin-top: 30px;
 }
 
-div {
-border: 1px solid black;
-}
 
 i:hover  {
     color: white;
@@ -411,6 +428,10 @@ p:hover {
 
 .relative {
     position: relative;
+}
+
+.hover-border {
+    text-align: center;
 }
 
 .hover-border:hover:after {
