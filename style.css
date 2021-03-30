@@ -23,7 +23,7 @@ aside {
 
 .barcontainer {
  width: 80%;
- height: 9px;
+ height: 6px;
  background-color: rgb(43, 42, 42);
  border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -69,11 +69,17 @@ main > section > .basis > .basis1 {
     opacity: 0.4;
 }
 
+.basis > .hoverimg  > .img-description:hover {
+    .basis > div > img {
+    opacity: 0.4;
+    }
+}
+
 .img-description {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     color: #fff;
     visibility: hidden;
 }
@@ -170,12 +176,17 @@ width: 50%;
 .flex {
     display: flex;
 }
+
 .flex-end {
     justify-content: flex-end;
 }
 
 .flexgrow1 {
     flex-grow: 1;
+}
+
+.flexgrow2 {
+    flex-grow: 2;
 }
 
 .font20 {
@@ -224,6 +235,10 @@ height: 30px;
     height: 50px;
 }
 
+.height70 {
+    height: 70px;
+}
+
 .height90 {
 height: 90px;
 }
@@ -240,6 +255,9 @@ height: 90px;
     width: 100px;
 }
 
+.hoverimg {
+    text-align: center;
+}
 .inline-block {
     display: inline-block;
 }
@@ -309,6 +327,10 @@ margin-left: 40px;
     margin-top: 20px;
 }
 
+.margin-top-100 {
+    margin-top: 100px;
+}
+
 
 .mx-auto {
     margin: auto;
@@ -326,7 +348,9 @@ margin-left: 40px;
 .padding-left2 {
     padding-right: 5px;
 }
-
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
 .margin-left3 {
     margin-left: -10px;
 }
@@ -374,6 +398,9 @@ margin-left: 40px;
 
 .white {
     color: white;
+}
+.width70p {
+    width: 70px;
 }
 
 .width100 {
@@ -424,6 +451,7 @@ p:hover {
 
 .hover:hover {
     color: white;
+    border-left: 4px solid green;
 }
 
 .relative {
@@ -440,6 +468,6 @@ p:hover {
     height: 5px;
     background: darkgreen;
     position: absolute;
-    bottom: 0px;
+    bottom: -5px;
     left: 30%;
   }
