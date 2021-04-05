@@ -196,6 +196,9 @@ width: 50%;
 .flexgrow2 {
     flex-grow: 2;
 }
+.flexbasis {
+    flex-basis: 10px;
+}
 
 .font20 {
     font-size: 20px;
@@ -270,6 +273,11 @@ height: 90px;
 .hoverimg {
     text-align: center;
 }
+
+hr {
+    width: 80%;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -341,6 +349,9 @@ margin-left: 40px;
 .margin-top-20 {
     margin-top: 20px;
 }
+.margin-top-80 {
+    margin-top: 80px;
+}
 
 .margin-top-100 {
     margin-top: 100px;
@@ -393,6 +404,10 @@ margin-left: 40px;
     position: relative;
 }
 
+.radius {
+    border-radius: 50%;
+}
+
 .right {
     float: right;
 }
@@ -412,6 +427,23 @@ margin-left: 40px;
 .visibility-xs {
     visibility: hidden;
 }
+.relative2 {
+    position: relative;
+    bottom: 230px;
+}
+.width80 > img {
+    margin-left: 10px;
+}
+span > img {
+    margin-left: 15px;
+}
+}
+
+@media all and (max-width:767px) and (min-width: 736px) {
+    .relative2 {
+        position: relative;
+        bottom: 50px;
+    }
 }
 
 .white {
@@ -475,6 +507,7 @@ p:hover {
 .relative {
     position: relative;
 }
+
 
 .hover-border {
     text-align: center;
